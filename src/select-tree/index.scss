@@ -1,0 +1,45 @@
+.basic-tree-select {
+  .el-select__tags {
+    max-height: 56px;
+    overflow-y: auto;
+  }
+  &__popper {
+    .el-scrollbar {
+      &__bar {
+        display: none;
+      }
+    }
+    .el-select-dropdown {
+      &__wrap {
+        margin: 0px;
+        max-height: none;
+        overflow: hidden;
+      }
+      &__list {
+        position: relative;
+        padding: 40px 0 6px 0;
+      }
+      &__item {
+        height: auto;
+        max-height: 274px;
+        padding: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        &.selected {
+          font-weight: normal;
+        }
+      }
+    }
+    .el-tree-node__content {
+      padding: 0;
+    }
+  }
+  &__filter {
+    position: absolute !important;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    z-index: 1;
+    width: auto !important;
+  }
+}
